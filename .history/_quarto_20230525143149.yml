@@ -1,0 +1,38 @@
+project:
+  type: book
+
+book:
+  title: "MySQL入门学习"
+  author: "明数科技"
+  date: "5/25/2023"
+  search: true
+  repo-url: https://github.com/jjallaire/hopr/
+  repo-actions: [edit]
+  downloads: [pdf, epub]
+  sharing: [twitter, facebook]
+
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - SQL学习.qmd
+    - part: SQL通用语法.qmd
+    - references.qmd
+
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+    include-in-header: 
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body: 
+      text: |
+        \printindex
+
+
+
