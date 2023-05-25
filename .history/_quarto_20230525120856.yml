@@ -1,0 +1,30 @@
+project:
+  type: book
+
+book:
+  title: "MySQL入门学习"
+  author: "明数科技"
+  date: "5/25/2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - SQL学习.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+    include-in-header: 
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body: 
+      text: |
+        \printindex
+
+
+
