@@ -27,8 +27,7 @@ book:
 format:
   html:
     theme: cosmo
-    cover-image: "./img/logo.png"
-    code-link: true
+
 
 
 

@@ -16,7 +16,7 @@ book:
   repo-actions: [edit]
   downloads: [pdf, epub]
   sharing: [twitter, facebook]
-  page-navigation: true
+    page-navigation: true
 
 
   chapters:
@@ -27,8 +27,7 @@ book:
 format:
   html:
     theme: cosmo
-    cover-image: "./img/logo.png"
-    code-link: true
+
 
 
 

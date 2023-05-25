@@ -16,8 +16,6 @@ book:
   repo-actions: [edit]
   downloads: [pdf, epub]
   sharing: [twitter, facebook]
-  page-navigation: true
-
 
   chapters:
     - index.qmd
@@ -27,8 +25,7 @@ book:
 format:
   html:
     theme: cosmo
-    cover-image: "./img/logo.png"
-    code-link: true
+
 
 
 
