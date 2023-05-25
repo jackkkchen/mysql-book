@@ -844,7 +844,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="外键约束" class="level3" data-number="2.4.3">
 <h3 data-number="2.4.3" class="anchored" data-anchor-id="外键约束"><span class="header-section-number">2.4.3</span> <strong>外键约束</strong></h3>
-<p><strong>3.</strong> <strong>1</strong> <strong>语法</strong></p>
+<section id="语法" class="level4" data-number="2.4.3.1">
+<h4 data-number="2.4.3.1" class="anchored" data-anchor-id="语法"><span class="header-section-number">2.4.3.1</span> <strong>语法</strong></h4>
 <p>添加外键:保证数据的完整性和一致性</p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>#建表前添加外键</span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -899,6 +900,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 <p>语法：</p>
 <div class="sourceCode" id="cb35"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="kw">ALTER</span> <span class="kw">TABLE</span> 表名 <span class="kw">ADD</span> <span class="kw">CONSTRAINT</span> 外键名称 <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (外键字段)<span class="kw">References</span> 主表名(字表字 段名) <span class="kw">ON</span> <span class="kw">UPDATE</span> <span class="kw">CASCADE</span> <span class="kw">ON</span> <span class="kw">DELETE</span> <span class="kw">CASCADE</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
 </section>
 </section>
 <section id="多表查询" class="level2" data-number="2.5">
