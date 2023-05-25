@@ -21,11 +21,11 @@ book:
     - index.qmd
     - intro.qmd
     - SQL学习.qmd
-
 format:
   html:
     theme: cosmo
-
+  pdf:
+    documentclass: scrreprt
 
 
 

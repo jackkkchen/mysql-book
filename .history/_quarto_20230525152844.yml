@@ -17,15 +17,18 @@ book:
   downloads: [pdf, epub]
   sharing: [twitter, facebook]
 
+
   chapters:
     - index.qmd
     - intro.qmd
     - SQL学习.qmd
 
+
 format:
   html:
     theme: cosmo
-
+  pdf:
+    documentclass: scrreprt
 
 
 
