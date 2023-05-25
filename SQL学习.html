@@ -205,22 +205,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#函数" id="toc-函数" class="nav-link" data-scroll-target="#函数"><span class="header-section-number">2.3</span> 函数</a>
   <ul class="collapse">
   <li><a href="#字符串函数" id="toc-字符串函数" class="nav-link" data-scroll-target="#字符串函数"><span class="header-section-number">2.3.1</span> 字符串函数</a></li>
-  <li><a href="#数值函数" id="toc-数值函数" class="nav-link" data-scroll-target="#数值函数"><span class="header-section-number">2.3.2</span> 2. 数值函数</a></li>
-  <li><a href="#日期函数" id="toc-日期函数" class="nav-link" data-scroll-target="#日期函数"><span class="header-section-number">2.3.3</span> <strong>3.</strong> <strong>日期函数</strong></a></li>
-  <li><a href="#流程函数" id="toc-流程函数" class="nav-link" data-scroll-target="#流程函数"><span class="header-section-number">2.3.4</span> 4. 流程函数</a></li>
+  <li><a href="#数值函数" id="toc-数值函数" class="nav-link" data-scroll-target="#数值函数"><span class="header-section-number">2.3.2</span> 数值函数</a></li>
+  <li><a href="#日期函数" id="toc-日期函数" class="nav-link" data-scroll-target="#日期函数"><span class="header-section-number">2.3.3</span> 日期函数</a></li>
+  <li><a href="#流程函数" id="toc-流程函数" class="nav-link" data-scroll-target="#流程函数"><span class="header-section-number">2.3.4</span> 流程函数</a></li>
   </ul></li>
   <li><a href="#约束" id="toc-约束" class="nav-link" data-scroll-target="#约束"><span class="header-section-number">2.4</span> 约束</a>
   <ul class="collapse">
   <li><a href="#概述和分类" id="toc-概述和分类" class="nav-link" data-scroll-target="#概述和分类"><span class="header-section-number">2.4.1</span> 概述和分类</a></li>
-  <li><a href="#案例展示" id="toc-案例展示" class="nav-link" data-scroll-target="#案例展示"><span class="header-section-number">2.4.2</span> <strong>2.</strong> <strong>案例展示</strong></a></li>
-  <li><a href="#外键约束" id="toc-外键约束" class="nav-link" data-scroll-target="#外键约束"><span class="header-section-number">2.4.3</span> <strong>3.</strong> <strong>外键约束</strong></a></li>
+  <li><a href="#案例展示" id="toc-案例展示" class="nav-link" data-scroll-target="#案例展示"><span class="header-section-number">2.4.2</span> <strong>案例展示</strong></a></li>
+  <li><a href="#外键约束" id="toc-外键约束" class="nav-link" data-scroll-target="#外键约束"><span class="header-section-number">2.4.3</span> <strong>外键约束</strong></a></li>
   </ul></li>
   <li><a href="#多表查询" id="toc-多表查询" class="nav-link" data-scroll-target="#多表查询"><span class="header-section-number">2.5</span> 多表查询</a>
   <ul class="collapse">
   <li><a href="#多表关系" id="toc-多表关系" class="nav-link" data-scroll-target="#多表关系"><span class="header-section-number">2.5.1</span> 多表关系</a></li>
-  <li><a href="#多表查询-1" id="toc-多表查询-1" class="nav-link" data-scroll-target="#多表查询-1"><span class="header-section-number">2.5.2</span> 2.多表查询</a></li>
-  <li><a href="#连接查询" id="toc-连接查询" class="nav-link" data-scroll-target="#连接查询"><span class="header-section-number">2.5.3</span> 3.连接查询</a></li>
-  <li><a href="#子查询" id="toc-子查询" class="nav-link" data-scroll-target="#子查询"><span class="header-section-number">2.5.4</span> 4.子查询</a></li>
+  <li><a href="#多表查询-1" id="toc-多表查询-1" class="nav-link" data-scroll-target="#多表查询-1"><span class="header-section-number">2.5.2</span> 多表查询</a></li>
+  <li><a href="#连接查询" id="toc-连接查询" class="nav-link" data-scroll-target="#连接查询"><span class="header-section-number">2.5.3</span> 连接查询</a></li>
+  <li><a href="#子查询" id="toc-子查询" class="nav-link" data-scroll-target="#子查询"><span class="header-section-number">2.5.4</span> 子查询</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jjallaire/hopr/edit/main/SQL学习.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
@@ -379,7 +379,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb24"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="kw">DISTINCT</span> 字段列表 <span class="kw">FROM</span> 表名;#将该列的重复的元素去除（去重）</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="条件查询" class="level5" data-number="2.2.1.4.2">
-<h5 data-number="2.2.1.4.2" class="anchored" data-anchor-id="条件查询"><span class="header-section-number">2.2.1.4.2</span> 2.条件查询</h5>
+<h5 data-number="2.2.1.4.2" class="anchored" data-anchor-id="条件查询"><span class="header-section-number">2.2.1.4.2</span> 条件查询</h5>
 <ol type="1">
 <li>语法(WHERE)</li>
 </ol>
@@ -513,7 +513,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>注意:null值不参与聚合函数的运算</p>
 </section>
 <section id="分组查询group-by" class="level5" data-number="2.2.1.4.3">
-<h5 data-number="2.2.1.4.3" class="anchored" data-anchor-id="分组查询group-by"><span class="header-section-number">2.2.1.4.3</span> 3.分组查询(GROUP BY)</h5>
+<h5 data-number="2.2.1.4.3" class="anchored" data-anchor-id="分组查询group-by"><span class="header-section-number">2.2.1.4.3</span> 分组查询(GROUP BY)</h5>
 <ol type="1">
 <li>语法</li>
 </ol>
@@ -548,7 +548,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>分组之后，查询的字段一般为聚合函数和分组字段，查询其他字段无任何意义(意思是分组字段和查询字段是相同的)</p>
 </section>
 <section id="排序查询order-by" class="level5" data-number="2.2.1.4.4">
-<h5 data-number="2.2.1.4.4" class="anchored" data-anchor-id="排序查询order-by"><span class="header-section-number">2.2.1.4.4</span> 4.排序查询(ORDER BY)</h5>
+<h5 data-number="2.2.1.4.4" class="anchored" data-anchor-id="排序查询order-by"><span class="header-section-number">2.2.1.4.4</span> 排序查询(ORDER BY)</h5>
 <ol type="1">
 <li>语法</li>
 </ol>
@@ -566,7 +566,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>注意:如果是多字段查询时，当第一个字段值相同时，才会根据第二个字段进行排序</p>
 </section>
 <section id="分页查询limit" class="level5" data-number="2.2.1.4.5">
-<h5 data-number="2.2.1.4.5" class="anchored" data-anchor-id="分页查询limit"><span class="header-section-number">2.2.1.4.5</span> 5.分页查询(LIMIT)</h5>
+<h5 data-number="2.2.1.4.5" class="anchored" data-anchor-id="分页查询limit"><span class="header-section-number">2.2.1.4.5</span> 分页查询(LIMIT)</h5>
 <ol type="1">
 <li>语法</li>
 </ol>
@@ -628,13 +628,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 </section>
 <section id="数值函数" class="level3" data-number="2.3.2">
-<h3 data-number="2.3.2" class="anchored" data-anchor-id="数值函数"><span class="header-section-number">2.3.2</span> 2. 数值函数</h3>
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="数值函数"><span class="header-section-number">2.3.2</span> 数值函数</h3>
 <p>​ ● 常用函数</p>
 <table class="table">
 <thead>
 <tr class="header">
 <th><strong>函数</strong></th>
-<th>功能</th>
+<th><strong>功能</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -662,7 +662,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 </section>
 <section id="日期函数" class="level3" data-number="2.3.3">
-<h3 data-number="2.3.3" class="anchored" data-anchor-id="日期函数"><span class="header-section-number">2.3.3</span> <strong>3.</strong> <strong>日期函数</strong></h3>
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="日期函数"><span class="header-section-number">2.3.3</span> 日期函数</h3>
 <p>​ ● 常用函数</p>
 <table class="table">
 <colgroup>
@@ -718,7 +718,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> name,diff(now(),entrydate) <span class="kw">as</span> entrydayscount <span class="kw">FROM</span> emp <span class="kw">Group</span> <span class="kw">By</span> entrydayscount <span class="kw">SELECT</span> name,DATEDIFF(NOW(),<span class="st">'2000-11-12 '</span>)<span class="kw">FROM</span> emp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="流程函数" class="level3" data-number="2.3.4">
-<h3 data-number="2.3.4" class="anchored" data-anchor-id="流程函数"><span class="header-section-number">2.3.4</span> 4. 流程函数</h3>
+<h3 data-number="2.3.4" class="anchored" data-anchor-id="流程函数"><span class="header-section-number">2.3.4</span> 流程函数</h3>
 <p>​ ● 常见函数</p>
 <table class="table">
 <colgroup>
@@ -827,7 +827,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>注意:约束是作用在表中字段上的，可以在<strong>创建表</strong>/<strong>修改表</strong>的时候添加约束</p>
 </section>
 <section id="案例展示" class="level3" data-number="2.4.2">
-<h3 data-number="2.4.2" class="anchored" data-anchor-id="案例展示"><span class="header-section-number">2.4.2</span> <strong>2.</strong> <strong>案例展示</strong></h3>
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="案例展示"><span class="header-section-number">2.4.2</span> <strong>案例展示</strong></h3>
 <div class="sourceCode" id="cb32"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="kw">create</span> <span class="kw">table</span> <span class="fu">user</span>(</span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="kw">id</span> <span class="dt">int</span> <span class="kw">primary</span> <span class="kw">key</span> auto_increment <span class="kw">comment</span> <span class="st">'主键 '</span>,</span>
@@ -843,7 +843,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>)<span class="kw">comment</span> <span class="st">'用户表 '</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="外键约束" class="level3" data-number="2.4.3">
-<h3 data-number="2.4.3" class="anchored" data-anchor-id="外键约束"><span class="header-section-number">2.4.3</span> <strong>3.</strong> <strong>外键约束</strong></h3>
+<h3 data-number="2.4.3" class="anchored" data-anchor-id="外键约束"><span class="header-section-number">2.4.3</span> <strong>外键约束</strong></h3>
 <p><strong>3.</strong> <strong>1</strong> <strong>语法</strong></p>
 <p>添加外键:保证数据的完整性和一致性</p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>#建表前添加外键</span>
@@ -908,33 +908,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>概述:</p>
 <p>由于业务之间相互关联，所以各个表结构之间也存在着各种联系，基本分为三种</p>
 <section id="一对多多对一" class="level4" data-number="2.5.1.1">
-<h4 data-number="2.5.1.1" class="anchored" data-anchor-id="一对多多对一"><span class="header-section-number">2.5.1.1</span> ● 一对多(多对一)</h4>
+<h4 data-number="2.5.1.1" class="anchored" data-anchor-id="一对多多对一"><span class="header-section-number">2.5.1.1</span> 一对多(多对一)</h4>
 <p>案例:部门与员工的关系</p>
 <p>关系:一个部门对应多个员工， 一个员工只能对应一个部门</p>
 <p>实现:<strong>在多的一方建立外键，指向一的一方的主键</strong>(员工表为多表，部门表就为一表)</p>
 </section>
 <section id="多对多" class="level4" data-number="2.5.1.2">
-<h4 data-number="2.5.1.2" class="anchored" data-anchor-id="多对多"><span class="header-section-number">2.5.1.2</span> <strong>● 多对多</strong></h4>
+<h4 data-number="2.5.1.2" class="anchored" data-anchor-id="多对多"><span class="header-section-number">2.5.1.2</span> 多对多</h4>
 <p>案例:学生和课程的关系</p>
 <p>关系:一个雪上可以选修多门课程， 一门课程也可以供多个学生选择</p>
 <p>实现:<strong>建立第三张中间表</strong>，中间表至少包含两个外键，分别<strong>关联两方主键</strong>(primary key)</p>
 </section>
 <section id="一对一" class="level4" data-number="2.5.1.3">
-<h4 data-number="2.5.1.3" class="anchored" data-anchor-id="一对一"><span class="header-section-number">2.5.1.3</span> <strong>● 一对一</strong></h4>
+<h4 data-number="2.5.1.3" class="anchored" data-anchor-id="一对一"><span class="header-section-number">2.5.1.3</span> 一对一</h4>
 <p>案例:用户与用户详情的关系</p>
 <p>关系:一对一关系，多用于单表拆分，将一张表的<strong>基础字段</strong>放在一张表中， <strong>其他详情字段放在另一张</strong> <strong>表中</strong>，以提升操作效率</p>
 <p>实现:在任意的一方加入外键，关联另外一方的主键，并且设置外键为唯一的(UNIQUE)</p>
 </section>
 </section>
 <section id="多表查询-1" class="level3" data-number="2.5.2">
-<h3 data-number="2.5.2" class="anchored" data-anchor-id="多表查询-1"><span class="header-section-number">2.5.2</span> 2.多表查询</h3>
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="多表查询-1"><span class="header-section-number">2.5.2</span> 多表查询</h3>
 <p>​ ● 概述: 指从多张表中查询数据</p>
 <p>笛卡尔积:笛卡尔乘积是指在数学中个，两个集合A集合和B集合的所有组合情况。(<strong>多表查询时，需要消除无效的笛卡尔积（连接条件）</strong> )</p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>#多表查询</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> 父表 ,外表;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="多表查询分类" class="level4" data-number="2.5.2.1">
-<h4 data-number="2.5.2.1" class="anchored" data-anchor-id="多表查询分类"><span class="header-section-number">2.5.2.1</span> <strong>● 多表查询分类</strong></h4>
+<h4 data-number="2.5.2.1" class="anchored" data-anchor-id="多表查询分类"><span class="header-section-number">2.5.2.1</span> <strong>多表查询分类</strong></h4>
 <p>​ 连接查询</p>
 <ol type="1">
 <li>内连接</li>
@@ -956,9 +956,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 </section>
 <section id="连接查询" class="level3" data-number="2.5.3">
-<h3 data-number="2.5.3" class="anchored" data-anchor-id="连接查询"><span class="header-section-number">2.5.3</span> 3.连接查询</h3>
+<h3 data-number="2.5.3" class="anchored" data-anchor-id="连接查询"><span class="header-section-number">2.5.3</span> 连接查询</h3>
 <section id="内连接" class="level4" data-number="2.5.3.1">
-<h4 data-number="2.5.3.1" class="anchored" data-anchor-id="内连接"><span class="header-section-number">2.5.3.1</span> <strong>3.1</strong> <strong>内连接</strong></h4>
+<h4 data-number="2.5.3.1" class="anchored" data-anchor-id="内连接"><span class="header-section-number">2.5.3.1</span> 内连接</h4>
 <p>​ ● 隐式内连接</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> 字段列表 <span class="kw">FROM</span> 表1，表2 <span class="kw">WHERE</span> 条件 . . .;</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -973,7 +973,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> e.name,d.name <span class="kw">FROM</span> emp e <span class="kw">INNER</span> <span class="kw">JOIN</span> dept d <span class="kw">ON</span> e.dept_id<span class="op">=</span>d.<span class="kw">id</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="外连接" class="level4" data-number="2.5.3.2">
-<h4 data-number="2.5.3.2" class="anchored" data-anchor-id="外连接"><span class="header-section-number">2.5.3.2</span> <strong>3.2</strong> <strong>外连接</strong></h4>
+<h4 data-number="2.5.3.2" class="anchored" data-anchor-id="外连接"><span class="header-section-number">2.5.3.2</span> 外连接</h4>
 <p>​ ● 左外连接(LEFT JOIN)</p>
 <div class="sourceCode" id="cb39"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> 字段列表 <span class="kw">FROM</span> 表1 <span class="kw">LEFT</span> [<span class="kw">OUTER</span>] <span class="kw">JOIN</span> 表2 <span class="kw">ON</span> 条件 #字段列表根据需求可进行优化 因为按照sql语句的执行属性可知select是在后面执行</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>相当于查询表1(左表)的所有数据和包含表1和表2交集部分的数据</p>
@@ -982,7 +982,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>相当于查询表2(右表)的所有数据和包含表1和表2交集部分的数据</p>
 </section>
 <section id="自连接" class="level4" data-number="2.5.3.3">
-<h4 data-number="2.5.3.3" class="anchored" data-anchor-id="自连接"><span class="header-section-number">2.5.3.3</span> <strong>3.3</strong> <strong>自连接</strong></h4>
+<h4 data-number="2.5.3.3" class="anchored" data-anchor-id="自连接"><span class="header-section-number">2.5.3.3</span> 自连接</h4>
 <p>​ ● 语法</p>
 <div class="sourceCode" id="cb41"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a># 把一张表看做成两张表 通过唯一 的id做为自连接的条件 managerid<span class="op">=</span><span class="kw">id</span></span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -995,7 +995,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> a.name,b.name <span class="kw">FROM</span> emp a <span class="kw">JOIN</span> emp b <span class="kw">ON</span> a.managerid<span class="op">=</span>b.<span class="kw">id</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="联合查询" class="level4" data-number="2.5.3.4">
-<h4 data-number="2.5.3.4" class="anchored" data-anchor-id="联合查询"><span class="header-section-number">2.5.3.4</span> <strong>3.4</strong> <strong>联合查询</strong></h4>
+<h4 data-number="2.5.3.4" class="anchored" data-anchor-id="联合查询"><span class="header-section-number">2.5.3.4</span> 联合查询</h4>
 <p>​ ● 定义</p>
 <p>对于联合查询，就是把多次查询的结果合并起来，形成一个新的查询结果集。</p>
 <p>​ ● 关键词</p>
@@ -1012,9 +1012,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 </section>
 <section id="子查询" class="level3" data-number="2.5.4">
-<h3 data-number="2.5.4" class="anchored" data-anchor-id="子查询"><span class="header-section-number">2.5.4</span> 4.子查询</h3>
+<h3 data-number="2.5.4" class="anchored" data-anchor-id="子查询"><span class="header-section-number">2.5.4</span> 子查询</h3>
 <section id="概述" class="level4" data-number="2.5.4.1">
-<h4 data-number="2.5.4.1" class="anchored" data-anchor-id="概述"><span class="header-section-number">2.5.4.1</span> <strong>4.1</strong> <strong>概述</strong></h4>
+<h4 data-number="2.5.4.1" class="anchored" data-anchor-id="概述"><span class="header-section-number">2.5.4.1</span> 概述</h4>
 <p>​ <strong>● 概念:</strong>SQL语句中嵌套SELECT语句，成为<strong>嵌套语句</strong>，又称子查询</p>
 <div class="sourceCode" id="cb43"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> t1 <span class="kw">WHERE</span> column1<span class="op">=</span>(<span class="kw">SELECT</span> column1 <span class="kw">FROM</span> t2);</span>
 <span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>#子查询外部的语句可以是INSERT<span class="op">/</span><span class="kw">UPDATE</span><span class="op">/</span><span class="kw">DELETE</span><span class="op">/</span>SELECT的任何一个</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1033,9 +1033,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 </section>
 <section id="查询结果分类" class="level4" data-number="2.5.4.2">
-<h4 data-number="2.5.4.2" class="anchored" data-anchor-id="查询结果分类"><span class="header-section-number">2.5.4.2</span> <strong>4.2</strong> <strong>查询结果分类</strong></h4>
+<h4 data-number="2.5.4.2" class="anchored" data-anchor-id="查询结果分类"><span class="header-section-number">2.5.4.2</span> 查询结果分类</h4>
 <section id="标量子查询" class="level5" data-number="2.5.4.2.1">
-<h5 data-number="2.5.4.2.1" class="anchored" data-anchor-id="标量子查询"><span class="header-section-number">2.5.4.2.1</span> <strong>● 标量子查询</strong></h5>
+<h5 data-number="2.5.4.2.1" class="anchored" data-anchor-id="标量子查询"><span class="header-section-number">2.5.4.2.1</span> <strong>标量子查询</strong></h5>
 <ol type="1">
 <li>定义: 子查询返回的结果是单个值(数字，字符串，日期等)，最简单的形式，这种子查询称为标量子查询</li>
 <li>常用操作符:= 、&lt;&gt;、&gt; 、&gt;=、 &lt; 、&lt;=</li>
@@ -1058,7 +1058,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb44-15"><a href="#cb44-15" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> emp <span class="kw">WHERE</span> dept_id<span class="op">=</span>(<span class="kw">SELECT</span> <span class="kw">id</span> <span class="kw">FROM</span> dept <span class="kw">WHERE</span> name<span class="op">=</span><span class="st">'具体的部门名 '</span>);</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="列子查询" class="level5" data-number="2.5.4.2.2">
-<h5 data-number="2.5.4.2.2" class="anchored" data-anchor-id="列子查询"><span class="header-section-number">2.5.4.2.2</span> <strong>● 列子查询</strong></h5>
+<h5 data-number="2.5.4.2.2" class="anchored" data-anchor-id="列子查询"><span class="header-section-number">2.5.4.2.2</span> <strong>列子查询</strong></h5>
 <ol type="1">
 <li><p>子查询返回的结果是一列(可以是多行 )，这种子查询为列子查询</p></li>
 <li><p>常用操作符:IN、NOT IN、ANY、SOME、ALL</p></li>
@@ -1113,7 +1113,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> emp <span class="kw">WHERE</span> salary<span class="op">&gt;</span><span class="kw">ALL</span> <span class="kw">SELECT</span> salary <span class="kw">FROM</span> emp <span class="kw">WHERE</span> <span class="kw">id</span><span class="op">=</span>(<span class="kw">SELECT</span> <span class="kw">id</span> <span class="kw">FROM</span> dept <span class="kw">WHERE</span> name <span class="op">=</span><span class="st">'财务部'</span>);</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="行子查询" class="level5" data-number="2.5.4.2.3">
-<h5 data-number="2.5.4.2.3" class="anchored" data-anchor-id="行子查询"><span class="header-section-number">2.5.4.2.3</span> ● 行子查询</h5>
+<h5 data-number="2.5.4.2.3" class="anchored" data-anchor-id="行子查询"><span class="header-section-number">2.5.4.2.3</span> 行子查询</h5>
 <p>1 . 子查询返回的结果是一行(可以是多列)，这种子查询为行子查询</p>
 <p>2 . 常用操作符:IN、 NOT IN、ANY、 SOME、ALL(同上)</p>
 <p>3 . 案例演示</p>
@@ -1126,7 +1126,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>#返回的结果是一行多列 对应的是salary和managerID</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="表子查询" class="level5" data-number="2.5.4.2.4">
-<h5 data-number="2.5.4.2.4" class="anchored" data-anchor-id="表子查询"><span class="header-section-number">2.5.4.2.4</span> ● 表子查询</h5>
+<h5 data-number="2.5.4.2.4" class="anchored" data-anchor-id="表子查询"><span class="header-section-number">2.5.4.2.4</span> 表子查询</h5>
 <ol type="1">
 <li>表子查询返回的结果是多行多列，这种子查询为列表查询</li>
 <li>常用操作符: IN</li>
