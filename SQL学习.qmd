@@ -207,7 +207,7 @@ SELECT 字段1[AS 别名1],字段2[AS 别名2]. . .FROM表名;#别名要用单�
 SELECT DISTINCT 字段列表 FROM 表名;#将该列的重复的元素去除（去重）
 ```
 
-##### 2.条件查询
+##### 条件查询
 
 1. 语法(WHERE)
 
@@ -270,7 +270,7 @@ SELECT COUNT(ID)FROM EMP;
 
 注意:null值不参与聚合函数的运算
 
-##### 3.分组查询(GROUP BY)
+##### 分组查询(GROUP BY)
 
 1. 语法
 
@@ -312,7 +312,7 @@ where是**分组之前**进行过滤，不满足where条件不进行分组；而
 
 分组之后，查询的字段一般为聚合函数和分组字段，查询其他字段无任何意义(意思是分组字段和查询字段是相同的)
 
-##### 4.排序查询(ORDER BY)
+##### 排序查询(ORDER BY)
 
 1. 语法
 
@@ -333,7 +333,7 @@ DESC：降序
 
 注意:如果是多字段查询时，当第一个字段值相同时，才会根据第二个字段进行排序
 
-##### 5.分页查询(LIMIT)
+##### 分页查询(LIMIT)
 
 1. 语法
 
@@ -367,11 +367,11 @@ SELECT 字段列表 FROM LIMIT 起始索引 ,查询记录数;#两个参数
 | TRIM(str)                | 去掉字符串**头部和尾部的空格**                               |
 | SUBSTRING(str,start,len) | 返回从字符串str从start位置起len个长度的字符串SELECT 函数(参数); |
 
-### 2. 数值函数
+### 数值函数
 
 ​       ● 常用函数
 
-| **函数**   | 功能                               |
+| **函数**   | **功能**                               |
 | ---------- | ---------------------------------- |
 | CEIL(x)    | 向上取整                           |
 | FLOOR(x)   | 向下取整                           |
@@ -379,7 +379,7 @@ SELECT 字段列表 FROM LIMIT 起始索引 ,查询记录数;#两个参数
 | RAND()     | 返回0~1的随机数                    |
 | ROUND(x,y) | 求参数x的四舍五入的值，保留y位小数 |
 
-### **3.** **日期函数**
+### 日期函数
 
 ​       ●  常用函数
 
@@ -406,7 +406,7 @@ SELECT name,diff(now(),entrydate) as entrydayscount FROM emp Group By entrydaysc
 
 
 
-### 4. 流程函数
+### 流程函数
 
 ​       ● 常见函数
 
@@ -460,7 +460,7 @@ FROM score;
 
 注意:约束是作用在表中字段上的，可以在**创建表**/**修改表**的时候添加约束
 
-### **2.** **案例展示**
+### **案例展示**
 
 ```sql
 create table user(
@@ -478,7 +478,7 @@ gander char(1) comment'性别 '
 )comment '用户表 ';
 ```
 
-### **3.** **外键约束**
+### **外键约束**
 
 **3.** **1** **语法**
 
@@ -535,7 +535,7 @@ ALTER TABLE 表名 ADD CONSTRAINT 外键名称 FOREIGN KEY (外键字段)Referen
 
 
 
-####        ● 一对多(多对一)
+####         一对多(多对一)
 
 案例:部门与员工的关系
 
@@ -543,7 +543,7 @@ ALTER TABLE 表名 ADD CONSTRAINT 外键名称 FOREIGN KEY (外键字段)Referen
 
 实现:**在多的一方建立外键，指向一的一方的主键**(员工表为多表，部门表就为一表)
 
-####        **● 多对多**
+####         多对多
 
 案例:学生和课程的关系
 
@@ -551,7 +551,7 @@ ALTER TABLE 表名 ADD CONSTRAINT 外键名称 FOREIGN KEY (外键字段)Referen
 
 实现:**建立第三张中间表**，中间表至少包含两个外键，分别**关联两方主键**(primary key)
 
-####        **● 一对一**
+####         一对一
 
 案例:用户与用户详情的关系
 
@@ -559,7 +559,7 @@ ALTER TABLE 表名 ADD CONSTRAINT 外键名称 FOREIGN KEY (外键字段)Referen
 
 实现:在任意的一方加入外键，关联另外一方的主键，并且设置外键为唯一的(UNIQUE)
 
-### 2.多表查询
+### 多表查询
 
 ​        ● 概述: 指从多张表中查询数据
 
@@ -571,7 +571,7 @@ ALTER TABLE 表名 ADD CONSTRAINT 外键名称 FOREIGN KEY (外键字段)Referen
 SELECT * FROM 父表 ,外表;
 ```
 
-####         **● 多表查询分类**
+####         **多表查询分类**
 
 ​              连接查询
 
@@ -593,9 +593,9 @@ SELECT * FROM 父表 ,外表;
 
 ​       •子查询
 
-### 3.连接查询
+### 连接查询
 
-#### **3.1** **内连接**
+#### 内连接
 
 ​       ● 隐式内连接
 
@@ -617,7 +617,7 @@ SELECT 字段列表 FROM 表1,[INNER] JOIN 表2 ON 连接条件;
 SELECT e.name,d.name FROM emp e INNER JOIN dept d ON e.dept_id=d.id;
 ```
 
-#### **3.2** **外连接**
+#### 外连接
 
 ​       ● 左外连接(LEFT JOIN)
 
@@ -635,7 +635,7 @@ SELECT 字段列表 FROM 表1 RIGHT [OUTER] JOIN 表2 ON 条件
 
 相当于查询表2(右表)的所有数据和包含表1和表2交集部分的数据
 
-#### **3.3** **自连接**
+#### 自连接
 
 ​       ●  语法
 
@@ -653,7 +653,7 @@ SELECT a.name,b.name FROM emp a JOIN emp b ON a.managerid=b.id;
 
  
 
-#### **3.4** **联合查询**
+#### 联合查询
 
 ​       ● 定义
 
@@ -674,9 +674,9 @@ UNION ALL #直接将查询的结果进行合并
 1. 对于联合查询多表查询的；列数必须保持一致，字段类型也必须保持一致 
 1. union all 会将全部数据直接合并在一起， union 会对合并之后的数据去重
 
-### 4.子查询
+### 子查询
 
-#### **4.1** **概述**
+#### 概述
 
 ​       **● 概念:**SQL语句中嵌套SELECT语句，成为**嵌套语句**，又称子查询
 
@@ -698,9 +698,9 @@ SELECT * FROM t1 WHERE column1=(SELECT column1 FROM t2);
 2. FROM之后
 3. SELECT之后
 
-#### **4.2** **查询结果分类**
+#### 查询结果分类
 
-#####        **● 标量子查询**
+#####        **标量子查询**
 
 1. 定义: 子查询返回的结果是单个值(数字，字符串，日期等)，最简单的形式，这种子查询称为标量子查询
 2. 常用操作符:= 、<>、> 、>=、 < 、<=
@@ -724,7 +724,7 @@ SELECT * FROM emp WHERE dept_id ="上条语句的结果";
 SELECT * FROM emp WHERE dept_id=(SELECT id FROM dept WHERE name='具体的部门名 ');
 ```
 
-#####        **● 列子查询**
+#####        **列子查询**
 
 1. 子查询返回的结果是一列(可以是多行 )，这种子查询为列子查询
 
@@ -758,7 +758,7 @@ SELECT salary FROM emp WHERE id=(SELECT id FROM dept WHERE name ='财务部');
 SELECT * FROM emp WHERE salary>ALL SELECT salary FROM emp WHERE id=(SELECT id FROM dept WHERE name ='财务部');
 ```
 
-#####        ● 行子查询
+#####        行子查询
 
 1 . 子查询返回的结果是一行(可以是多列)，这种子查询为行子查询
 
@@ -776,7 +776,7 @@ SELECT * FROM emp WHERE (salary,managerid)=(SELECT salary managerid FROM emp WHE
 #返回的结果是一行多列 对应的是salary和managerID
 ```
 
-#####        ● 表子查询
+#####        表子查询
 
 1. 表子查询返回的结果是多行多列，这种子查询为列表查询
 2. 常用操作符: IN
