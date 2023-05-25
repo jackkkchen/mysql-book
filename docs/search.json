@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "intro.html#mysql三层结构",
+    "href": "intro.html#mysql三层结构",
+    "title": "1  MySQL介绍",
+    "section": "1.1 MySQL三层结构",
+    "text": "1.1 MySQL三层结构\n\n1.1.1 数据库\n全称是存储数据的仓库，数据时候有组织的进行存储；简称DataBase(DB)\n\n\n1.1.2 数据库管理系统\n全称是操纵和管理数据库的大型软件 ；简称DataBase Management System（DBMS）\n\n\n1.1.3 SQL\n操纵关系型数据库的编程语言，定义了一套操作关系型数据库统一标准 ；简称Structured Query Language（SQL）"
+  },
+  {
+    "objectID": "intro.html#主流的关系型数据库管理系统系统",
+    "href": "intro.html#主流的关系型数据库管理系统系统",
+    "title": "1  MySQL介绍",
+    "section": "1.2 主流的关系型数据库管理系统系统",
+    "text": "1.2 主流的关系型数据库管理系统系统\n● Oracle\n● MySQL\n● Microsoft SQL Server"
+  }
+]

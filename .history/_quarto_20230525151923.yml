@@ -2,9 +2,6 @@ project:
   type: book
   output-dir: docs
 
-execute:
-  freeze: auto
-
 book:
   title: "MySQL入门学习"
   favicon: "./img/logo.png"
